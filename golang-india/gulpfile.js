@@ -2,9 +2,10 @@
 const PORT = '8080';
 
 const scssPathSource = 'mix/golang-india/_src/scss/*.scss';
-const scssPathDestination = 'mix/golang-india/_assets/css';
+const scssPathDestination = 'mix/golang-india/assets/css';
 const jsPathSource = 'mix/golang-india/_src/js/*.js';
-const jsPathDestination = 'mix/golang-india/_assets/js';
+const jsPathDestination = 'mix/golang-india/assets/js';
+const mapPathDestination = '../../_maps';
 
 // Imports
 var gulp = require('gulp'),
@@ -87,7 +88,7 @@ gulp.task('watch', (cb) => {
         },
         noSource: true
       }))
-      .pipe(sourcemaps.write('.'))
+      .pipe(sourcemaps.write(mapPathDestination))
       .pipe(gulp.dest(jsPathDestination))
   });
 
@@ -101,7 +102,7 @@ gulp.task('watch', (cb) => {
       .pipe(rename({
         suffix: ".min"
       }))
-      .pipe(sourcemaps.write('.'))
+      .pipe(sourcemaps.write(mapPathDestination))
       .pipe(gulp.dest(scssPathDestination))
   });
 
