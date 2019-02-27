@@ -6,92 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
   <title>Golang India</title>
-  <style>
-    /********************/
-    /* Common */
-    /********************/
-
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-    }
-    .wrapper {
-      width: 1200px;
-      margin: 0 auto;
-    }
-    a {
-      text-decoration: none;
-    }
-    .primary-btn {
-      background: #fff200;
-      padding: 20px 30px;
-      display: inline-block;
-      border-radius: 10px;
-      color: #824ebd;
-      font-weight: bold;
-      transition: all .2s ease;
-    }
-    .primary-btn:hover {
-      transform: translate(2px, 2px);
-    }
-
-
-    /********************/
-    /* Banner */
-    /********************/
-    
-    .banner {
-      background: #74cedd;
-      padding: 20px 0;
-      color: white;
-    }
-    .banner .wrapper {
-      height: 380px;
-      display: flex;
-      align-items: stretch;
-    }
-    .banner .image {
-      width: 550px;
-      /* background: lightblue; */
-      display: flex;
-      align-items: center;
-    }
-    .banner .image svg {
-      height: 320px;
-    }
-    .banner .content {
-      /* background: lightgreen; */
-      width: calc(100% - 550px);
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-      align-items: self-start;
-    }
-    .banner .content h1 {
-      margin: 0;
-      font-weight: 500;
-      font-size: 50px;
-    }
-    .banner .content p {
-      margin-bottom: 50px;
-      margin-top: 10px;
-      font-size: 24px;
-    }
-    /* Left Top Position */
-    /* #leftBlackEye { cx: 110; cy: 75; }
-    #leftWhiteEye { cx: 105; cy: 70; }
-    #rightBlackEye { cx: 230; cy: 75; }
-    #rightWhiteEye { cx: 225; cy: 70; } */
-
-    /* Right Center Position */
-    #leftBlackEye { cx: 150; cy: 90; }
-    #leftWhiteEye { cx: 155; cy: 90; }
-    #rightBlackEye { cx: 275; cy: 90; }
-    #rightWhiteEye { cx: 280; cy: 90; }
-  </style>
+  <link rel="stylesheet" href="./_assets/css/style.min.css">
 </head>
 <body>
   <div class="banner" id="banner">
@@ -134,49 +49,6 @@
       </div>
     </div>
   </div>
-
-  <script>
-    var banner = document.getElementById('banner');
-    var leftBlackEye = document.getElementById('leftBlackEye');
-    var leftWhiteEye = document.getElementById('leftWhiteEye');
-    var rightBlackEye = document.getElementById('rightBlackEye');
-    var rightWhiteEye = document.getElementById('rightWhiteEye');
-
-    banner.addEventListener('mouseenter', (e) => {
-      banner.addEventListener('mousemove', mouseMove);
-      banner.addEventListener('mouseleave', mouseLeave);
-    });
-    
-    function mouseLeave(e) {
-      banner.removeEventListener('mouseleave', mouseLeave);
-      banner.removeEventListener('mousemove', mouseMove);
-    }
-    
-    function mouseMove(e) {
-      var bannerDimenstions = banner.getBoundingClientRect();
-      var bannerWidth = bannerDimenstions.width;
-      var bannerHeight = bannerDimenstions.height;
-
-      var leftBlackEyeCX = 110 + (45 * e.pageX / bannerWidth);
-      var leftWhiteEyeCX = 105 + (55 * e.pageX / bannerWidth);
-      var rightBlackEyeCX = 230 + (45 * e.pageX / bannerWidth);
-      var rightWhiteEyeCX = 225 + (55 * e.pageX / bannerWidth);
-
-      var leftBlackEyeCY = 75 + (30 * e.pageY / bannerHeight);
-      var leftWhiteEyeCY = 70 + (40 * e.pageY / bannerHeight);
-      var rightBlackEyeCY = 75 + (30 * e.pageY / bannerHeight);
-      var rightWhiteEyeCY = 70 + (40 * e.pageY / bannerHeight);
-
-      leftBlackEye.style.cx = leftBlackEyeCX; 
-      leftWhiteEye.style.cx = leftWhiteEyeCX; 
-      rightBlackEye.style.cx = rightBlackEyeCX; 
-      rightWhiteEye.style.cx = rightWhiteEyeCX; 
-
-      leftBlackEye.style.cy = leftBlackEyeCY; 
-      leftWhiteEye.style.cy = leftWhiteEyeCY; 
-      rightBlackEye.style.cy = rightBlackEyeCY; 
-      rightWhiteEye.style.cy = rightWhiteEyeCY;
-    }
-  </script>
+  <script src="./_assets/js/script.min.js"></script>
 </body>
 </html>
