@@ -111,27 +111,28 @@ a {
   .banner {
     padding: 20px 0;
     .wrapper {
+      // background: red;
       height: 380px;
       display: flex;
-      align-items: stretch;
-      flex-flow: column;
+      flex-flow: row-reverse;
+      text-align: left;
+      align-items: center;
+      justify-content: space-around;
     }
     .content {
-      /* background: lightgreen; */
-      width: calc(100% - 550px);
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-      align-items: self-start;
+      // background: lightblue;
+      margin-bottom: 0;
       p {
         margin-bottom: 50px;
       }
     }
     .image {
-      width: 550px;
-      /* background: lightblue; */
-      display: flex;
+      // background: lightgoldenrodyellow;
+      width: 370px;
       align-items: center;
+      position: static;
+      left: auto;
+      transform: none;
     }
   }
 }
