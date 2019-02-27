@@ -36,17 +36,11 @@ a {
   }
 }
 
-/* Left Top Position */
-/* #leftBlackEye { cx: 110; cy: 75; }
-#leftWhiteEye { cx: 105; cy: 70; }
-#rightBlackEye { cx: 230; cy: 75; }
-#rightWhiteEye { cx: 225; cy: 70; } */
-
-/* Right Center Position */
-#leftBlackEye { cx: 150; cy: 90; }
-#leftWhiteEye { cx: 155; cy: 90; }
-#rightBlackEye { cx: 275; cy: 90; }
-#rightWhiteEye { cx: 280; cy: 90; }
+/* Eye Position - Front */
+#leftBlackEye { cx: 133; cy: 90; }
+#leftWhiteEye { cx: 133; cy: 90; }
+#rightBlackEye { cx: 253; cy: 90; }
+#rightWhiteEye { cx: 253; cy: 91; }
 
 
 /********************/
@@ -102,6 +96,12 @@ a {
   .wrapper {
     max-width: 1200px;
   }
+
+  /* Eye Position - Right Center */
+  #leftBlackEye { cx: 150; cy: 90; }
+  #leftWhiteEye { cx: 155; cy: 90; }
+  #rightBlackEye { cx: 275; cy: 90; }
+  #rightWhiteEye { cx: 280; cy: 90; }  
 
 
   /********************/
